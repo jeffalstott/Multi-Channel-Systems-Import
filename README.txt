@@ -14,6 +14,6 @@ You will now have a .raw file, which can be imported into numpy with:
 
 data, sampling_rate, channel_names = MCS_import(file_name)
 
-The data is a channels*time array, with the channels having the same order as channel_names
+The data is a channels*time array, with the channels having the same order as channel_names.
 
 The data will use the header data in the .raw file to set the appropriate level and scale for Electrode data. Their data type will be double, though the data was originally stored in the .mcd as integers. This could have some implications for the numerical accuracy of the data, which should be totally irrelevant for the sensible use cases of Multi Channel Systems' hardware.
