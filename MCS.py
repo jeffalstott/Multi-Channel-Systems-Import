@@ -10,7 +10,7 @@ def raw_import(file_name):
     ADC_zero = float(f.readline()[11:-2])
     print 'Offset: '+str(ADC_zero)
     El = float(f.readline()[5:11])
-    print 'Scaling: '+El
+    print 'Scaling: '+str(El)
     channel_names = f.readline()[10:].split(';')
     print str(len(channel_names))+' channels'
     channel_names[-1] = channel_names[-1][:-2]
